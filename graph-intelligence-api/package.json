@@ -1,0 +1,27 @@
+{
+  "name": "graph-intelligence-api",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Counterparty Risk Graph Intelligence API - Paid endpoints for on-chain risk scoring and exposure analysis",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "test": "bun test",
+    "build": "tsup src/index.ts --format esm --dts"
+  },
+  "dependencies": {
+    "@lucid-agents/core": "^2.5.0",
+    "@lucid-agents/http": "^1.10.2",
+    "@lucid-agents/payments": "^2.5.0",
+    "@lucid-agents/wallet": "^0.6.2",
+    "@lucid-agents/identity": "^2.5.0",
+    "@lucid-agents/hono": "^0.9.6",
+    "@lucid-agents/a2a": "latest",
+    "@lucid-agents/ap2": "latest",
+    "hono": "^4.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/bun": "latest"
+  }
+}
